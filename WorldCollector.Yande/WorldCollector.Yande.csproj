@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\TaskQueue\TaskQueue.CommonTaskQueues\TaskQueue.CommonTaskQueues.csproj" />
+    <ProjectReference Include="..\..\TaskQueue.CommonTaskQueues\TaskQueue.CommonTaskQueues\TaskQueue.CommonTaskQueues.csproj" />
   </ItemGroup>
 
 </Project>
