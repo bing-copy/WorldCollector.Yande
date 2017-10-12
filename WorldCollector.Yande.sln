@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7DC60F19-D7C7-4F0D-AED5-907F1BE1FD03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9B104415-14BB-4782-A1BA-2C0B9A2B1230}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorldCollector.Yande", "WorldCollector.Yande\WorldCollector.Yande.csproj", "{FF1E9100-05CC-481F-A1BB-3CFD277C55B2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskQueue.CommonTaskQueues", "..\SchedulerFactory\src\ScheduledTask.CommonTasks\TaskQueue.CommonTaskQueues.csproj", "{78E97053-62FA-482E-9705-77A03FC3B411}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskQueue", "..\SchedulerFactory\src\SchedulerFactory\TaskQueue.csproj", "{F29696FD-F449-4A7A-B062-263B7B738655}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyProvider", "..\ProxyProvider\ProxyProvider\ProxyProvider.csproj", "{4B8DFC65-DC06-4B1E-96B6-37DA2BBA8F67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF1E9100-05CC-481F-A1BB-3CFD277C55B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF1E9100-05CC-481F-A1BB-3CFD277C55B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF1E9100-05CC-481F-A1BB-3CFD277C55B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF1E9100-05CC-481F-A1BB-3CFD277C55B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78E97053-62FA-482E-9705-77A03FC3B411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78E97053-62FA-482E-9705-77A03FC3B411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78E97053-62FA-482E-9705-77A03FC3B411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78E97053-62FA-482E-9705-77A03FC3B411}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F29696FD-F449-4A7A-B062-263B7B738655}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F29696FD-F449-4A7A-B062-263B7B738655}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F29696FD-F449-4A7A-B062-263B7B738655}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F29696FD-F449-4A7A-B062-263B7B738655}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B8DFC65-DC06-4B1E-96B6-37DA2BBA8F67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B8DFC65-DC06-4B1E-96B6-37DA2BBA8F67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B8DFC65-DC06-4B1E-96B6-37DA2BBA8F67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B8DFC65-DC06-4B1E-96B6-37DA2BBA8F67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FF1E9100-05CC-481F-A1BB-3CFD277C55B2} = {7DC60F19-D7C7-4F0D-AED5-907F1BE1FD03}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {917F0169-2E04-4A9C-B83C-94843702FCAE}
+	EndGlobalSection
+EndGlobal
