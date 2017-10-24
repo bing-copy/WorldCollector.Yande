@@ -17,7 +17,7 @@ namespace WorldCollector.Yande
         private readonly YandeCollectorOptions _options;
         private const string ProxyPurpose = "Yande";
         private List<int> _lastImageIds = new List<int>();
-        private List<int> _currentImageIds = new List<int>();
+        private readonly List<int> _currentImageIds = new List<int>();
 
         public YandeCollector(YandeCollectorOptions options, ILoggerFactory loggerFactory) : base(
             new TaskQueuePoolOptions {MaxThreads = options.MaxThreads, MinInterval = options.MinInterval},
@@ -31,6 +31,11 @@ namespace WorldCollector.Yande
             base.Stop();
             _lastImageIds.Clear();
             _currentImageIds.Clear();
+        }
+
+        public override object GetState()
+        {
+            return $"{base.GetState()}{Environment.NewLine}Last Ids: {_lastImageIds.Count}";
         }
 
         public override async Task Start()
@@ -70,7 +75,7 @@ namespace WorldCollector.Yande
                 Enqueue(new YandeGetImageUrlListTaskData {Page = 1});
                 await base.Start();
 
-                if (this.All(t => t.Finished) && _currentImageIds.Any())
+                if (this.All(t => t.Completed) && _currentImageIds.Any())
                 {
                     var record = new CollectRecord
                     {
